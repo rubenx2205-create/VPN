@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Compartir VPN</string>
+    <string name="channel_name">Compartición del VPN</string>
+    <string name="action_stop">Detener</string>
+
+    <string name="share_switch">Compartir el VPN</string>
+    <string name="mode_title">Modo</string>
+    <string name="mode_auto">Automático (root si está disponible)</string>
+    <string name="mode_root">Root: transparente, sin configurar nada en los clientes</string>
+    <string name="mode_proxy">Sin root: proxy (los clientes necesitan un ajuste)</string>
+    <string name="kill_switch">Bloquear a los clientes si el VPN se cae (kill switch, modo root)</string>
+    <string name="start_on_boot">Iniciar al encender el teléfono</string>
+    <string name="port_hint">Puerto del proxy (modo sin root)</string>
+    <string name="open_hotspot">Abrir ajustes del punto de acceso</string>
+    <string name="help_title">Cómo usarlo</string>
+    <string name="help_text">1. Conecta Psiphon (no excluyas esta app en sus ajustes de apps).\n2. Activa el punto de acceso Wi‑Fi, USB o Bluetooth del teléfono.\n3. Activa \"Compartir el VPN\". Se quedará esperando y empezará a compartir sola cada vez que Psiphon conecte.\n\nCon root, los demás dispositivos solo tienen que conectarse al punto de acceso.\nSin root, en cada dispositivo: Ajustes Wi‑Fi → la red del punto de acceso → Proxy → Automático, y escribe la URL que aparece arriba.</string>
+
+    <string name="status_stopped">Detenido.</string>
+    <string name="status_mode">Modo: %1$s</string>
+    <string name="status_vpn_on">VPN: activo (%1$s)</string>
+    <string name="status_vpn_off">VPN: no detectado, esperando a que Psiphon conecte…</string>
+    <string name="status_vpn_off_blocked">VPN: no detectado. Los clientes están bloqueados hasta que Psiphon conecte.</string>
+    <string name="status_downstreams">Compartiendo por: %1$s</string>
+    <string name="status_no_hotspot">Punto de acceso: no detectado. Actívalo en Ajustes.</string>
+    <string name="status_clients">Dispositivos conectados: %1$d</string>
+    <string name="status_connections">Conexiones activas: %1$d</string>
+    <string name="status_proxy">Configuración automática (PAC) para los clientes:\n%1$s\n\nO proxy manual: %2$s, puerto %3$d</string>
+    <string name="status_error">Error: %1$s</string>
+    <string name="mode_name_root">root (transparente)</string>
+    <string name="mode_name_proxy">sin root (proxy)</string>
+
+    <string name="notif_starting">Iniciando…</string>
+    <string name="notif_waiting">Esperando a que el VPN conecte…</string>
+    <string name="notif_waiting_blocked">VPN caído: clientes bloqueados hasta que vuelva.</string>
+    <string name="notif_no_hotspot">VPN activo. Activa el punto de acceso para compartirlo.</string>
+    <string name="notif_root_sharing">Compartiendo el VPN · %1$d dispositivo(s)</string>
+    <string name="notif_proxy_sharing">Proxy http://%1$s:%2$d/proxy.pac · %3$d conexión(es)</string>
+    <string name="notif_error">Error: %1$s</string>
+    <string name="err_no_root">No se obtuvo acceso root. Concede permiso en Magisk/KernelSU o usa el modo sin root.</string>
+    <string name="err_port">No se pudo abrir el puerto %1$d: %2$s</string>
+</resources>
